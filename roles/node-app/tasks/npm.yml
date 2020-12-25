@@ -1,0 +1,14 @@
+- name: Install express
+  npm:
+    name: express
+    path: /opt/app
+
+- name: Install mysql
+  npm:
+    name: mysql
+    path: /opt/app
+
+- name: Install js-yaml
+  npm:
+    name: js-yaml
+    path: /opt/app

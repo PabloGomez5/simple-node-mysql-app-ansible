@@ -1,0 +1,15 @@
+- name: Update the repository cache and install node
+  apt:
+    name: nodejs
+    state: latest
+    update_cache: yes
+
+- name: Install npm
+  apt:
+    name: npm
+    state: latest
+
+- name: Install the MySQL client
+  apt:
+    name: mysql-client
+    state: latest
