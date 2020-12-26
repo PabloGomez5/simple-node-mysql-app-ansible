@@ -12,3 +12,9 @@
   npm:
     name: js-yaml
     path: /opt/app
+
+- name: Install pm2
+  npm:
+    name: pm2
+    global: yes
+    production: yes
