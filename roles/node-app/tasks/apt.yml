@@ -1,8 +1,18 @@
-- name: Update the repository cache and install node
+- name: Update the repository cache and install python
+  apt:
+    name: python3
+    state: latest
+    update_cache: yes
+
+- name: Install pip3
+  apt:
+    name: python3-pip
+    state: latest
+
+- name: Install node
   apt:
     name: nodejs
     state: latest
-    update_cache: yes
 
 - name: Install npm
   apt:
